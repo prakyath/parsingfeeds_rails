@@ -1,0 +1,8 @@
+<h1>listing feeds</h1> 
+ <% @entries.each do |ent| %>
+
+<h2>Feed Title:</h2><ul><%= ent.title%></ul>
+<h2>Feed url:</h2><ul><%= ent.url %></ul>
+<h2>Feed content:</h2><ul><%= raw(ent.content) %></ul>
+<hr>
+<% end %>
